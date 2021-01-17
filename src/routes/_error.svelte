@@ -10,7 +10,7 @@
 </svelte:head>
 
 <div>
-	<h2>It seems something is wrong...</h2>
+  <h2>It seems something is wrong...</h2>
   <h1><pre>{status}</pre></h1>
 
   <h3><pre>{error.message}</pre></h3>
@@ -34,8 +34,8 @@
   }
 
   h2 {
-	  margin: 0 0 3rem 0;
-	  text-align: center;
+    margin: 0 0 3rem 0;
+    text-align: center;
   }
 
   h3 {

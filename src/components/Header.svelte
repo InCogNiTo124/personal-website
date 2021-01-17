@@ -3,7 +3,7 @@
 </script>
 
 <div class="header">
-  <img id="face" src="{smetko}" alt="Marijan Smetko" />
+  <img id="face" src={smetko} alt="Marijan Smetko" />
   <h1 id="name">Marijan Smetko</h1>
 </div>
 
