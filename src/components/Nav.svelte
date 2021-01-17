@@ -1,4 +1,5 @@
 <script>
+  import { BLANK } from "./utils.js";
   export let segment;
 </script>
 
@@ -8,7 +9,7 @@
     <a class={`button ${segment === "projects" ? "router-link-active" : ""}`} href="/projects">Projects</a>
   </div>
   <hr />
-  <a class="button" href="/Marijan-Smetko-CV.pdf" target="_blank">My CV</a>
+  <a class="button" href="Marijan-Smetko-CV.pdf" target={BLANK}>My CV</a>
 </div>
 
 <style>
