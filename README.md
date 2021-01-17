@@ -2,7 +2,7 @@
 
 ## Running the project
 
-Once you have pulled the project, install dependencies and run the project in development mode:
+Once you have cloned the project, install dependencies and run the project in development mode:
 
 ```bash
 cd ms-personal-sapper
