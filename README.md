@@ -1,8 +1,6 @@
 # personal website from sapper-template
 
-## Basic
-
-### Running the project
+## Running the project
 
 Once you have pulled the project, install dependencies and run the project in development mode:
 
@@ -14,7 +12,7 @@ npm run dev
 
 This will start the development server on [localhost:3000](http://localhost:3000).
 
-### Production mode and deployment
+## Production mode and deployment
 
 To start a production version of your app, run `npm run build && npm start`. This will disable live reloading, and activate the appropriate bundler plugins.
 
@@ -26,6 +24,14 @@ vercel
 ```
 
 If your app can't be exported to a static site, you can use the [now-sapper](https://github.com/thgh/now-sapper) builder. You can find instructions on how to do so in its [README](https://github.com/thgh/now-sapper#basic-usage).
+
+
+-------------------
+
+-------------------
+
+-------------------
+
 
 ## Using TypeScript
 
