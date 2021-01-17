@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+#sapper {
+  width: 100%;
+  font-family: Lato, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(218, 0, 0);
+}
+
+
+p {
+  padding-top: 5px;
+}
+
+hr {
+  margin: 15px 0;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(218, 0, 0, 0.1), rgba(218, 0, 0, 1), rgba(218, 0, 0, 0.1));
+}
+
+.button {
+  padding: 5px 10px;
+}
+
+a.inline-link {
+  color: rgb(218, 0, 0);
+}
+
+@media screen and (min-width: 650px) {
+  body {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
