@@ -7,7 +7,7 @@
 Once you have pulled the project, install dependencies and run the project in development mode:
 
 ```bash
-cd my-app
+cd ms-personal-sapper
 npm install && npm update
 npm run dev
 ```
