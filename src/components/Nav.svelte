@@ -1,10 +1,14 @@
 <script>
   import { BLANK } from "./utils.js";
+  import Theme from "./Theme.svelte";
+
   export let segment;
 </script>
 
 <div id="top">
   <div id="nav">
+    <Theme />
+    <hr />
     <a class={`button ${segment === undefined ? "router-link-active" : ""}`} href=".">About</a>
     <a class={`button ${segment === "projects" ? "router-link-active" : ""}`} href="/projects">Projects</a>
   </div>
@@ -26,12 +30,13 @@
     top: 0px;
     padding: 20px;
     border-bottom: 1px solid rgb(218, 0, 0);
-    background: white;
   }
+
   #nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     position: sticky;
   }
   @media screen and (min-width: 650px) {
@@ -45,7 +50,6 @@
     #nav {
       display: flex;
       flex-direction: column;
-      justify-content: start;
     }
   }
 </style>

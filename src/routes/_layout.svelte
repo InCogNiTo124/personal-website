@@ -1,8 +1,21 @@
 <script>
+  import { onMount } from "svelte";
+  import { LIGHT, storageTheme } from "../components/utils.js";
+  import { theme } from "../stores/theme_store.js";
   import Nav from "../components/Nav.svelte";
   import Header from "../components/Header.svelte";
 
   export let segment;
+  onMount(() => {
+    if (process.browser) {
+      theme.useLocalStorage();
+      theme.subscribe((newval) => {
+        document.getElementById("body").setAttribute("class", newval)
+      });
+      document.getElementById("body").setAttribute("class", localStorage.getItem(storageTheme) || LIGHT)
+
+    }
+  });
 </script>
 
 <div id="app">

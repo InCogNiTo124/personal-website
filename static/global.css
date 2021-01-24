@@ -7,9 +7,27 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.dark-theme {
+  color: white;
+  background-color: #2f2f2f;
+}
+
+.dark-theme a {
+  color: white;
+}
+
+.light-theme {
+  color: black;
+  background-color: white;
+}
+
+.light-theme a {
+  color: black;
+}
+
 a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 a:hover {
