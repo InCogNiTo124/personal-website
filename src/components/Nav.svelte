@@ -11,6 +11,7 @@
     <hr />
     <a class={`button ${segment === undefined ? "router-link-active" : ""}`} href=".">About</a>
     <a class={`button ${segment === "projects" ? "router-link-active" : ""}`} href="/projects">Projects</a>
+    <a class={`button ${segment === "ilpc" ? "router-link-active" : ""}`} href="/ilpc">ILPC</a>
   </div>
   <hr />
   <a class="button" href="Marijan-Smetko-CV.pdf" target={BLANK}>My CV</a>
