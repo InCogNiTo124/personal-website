@@ -8,7 +8,7 @@
     .get(REPO_API)
     .then((res) => {
       const plist = [];
-      const whitelist = ["ChaosPlotter", "recursive-sgd", "MojBlokZaBelu", "PASS", "dotfiles", "personal-website", "m-numbers", "BelaBot", "Jumper"];
+      const whitelist = ["ChaosPlotter", "recursive-sgd", "MojBlokZaBelu", "PASS", "dotfiles", "personal-website", "m-numbers", "BelaBot", "Jumper", "chemeq"];
       for (let project of res.data) {
         if (whitelist.includes(project.name)) {
           let p = {
