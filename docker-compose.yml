@@ -4,24 +4,28 @@ services:
     image: svelte
     container_name: personal-website
     build:
-        dockerfile: Dockerfile
-        context: .
+      dockerfile: Dockerfile
+      context: .
     restart: always
     labels:
-        - "traefik.enable=true"
-        - "traefik.http.routers.msmetko.rule=Host(`msmetko.xyz`)"
-        - "traefik.http.routers.msmetko.entrypoints=websecure"
-        - "traefik.http.routers.msmetko.tls=true"
-        - "traefik.http.routers.msmetko.tls.certresolver=le"
-        - "traefik.http.services.msmetko.loadbalancer.server.scheme=http"
-        - "traefik.http.services.msmetko.loadbalancer.server.port=80"
-        - "traefik.docker.network=traefik_default"
+      - "traefik.enable=true"
+      - "traefik.http.routers.msmetko.rule=Host(`msmetko.xyz`)"
+      - "traefik.http.routers.msmetko.entrypoints=websecure"
+      - "traefik.http.routers.msmetko.tls=true"
+      - "traefik.http.routers.msmetko.tls.certresolver=le"
+      - "traefik.http.services.msmetko.loadbalancer.server.scheme=http"
+      - "traefik.http.services.msmetko.loadbalancer.server.port=80"
+      - "traefik.docker.network=traefik_default"
     ports:
-        - "5000:80"
+      - "5000:80"
     networks:
-        - traefik_default
+      - traefik_default
     volumes:
-        - ./msmetko.xyz.conf:/etc/nginx/conf.d/default.conf
+      - ./msmetko.xyz.conf:/etc/nginx/conf.d/default.conf:ro
+      - msmetko-logs:/var/log/nginx:rw
+
+volumes:
+  msmetko-logs:
 
 networks:
     traefik_default:
