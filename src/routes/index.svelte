@@ -3,7 +3,7 @@
   import SectionGroup from "../components/SectionGroup.svelte";
   import { FER_LINK_EN, TARGET_BLANK, INLINE_CLASS, BIRTHDATE } from "../components/utils";
 
-  const age = dayjs().diff(dayjs(BIRTHDATE), 'y')); 
+  const age = dayjs().diff(dayjs(BIRTHDATE), 'y'); 
 
   let sections = [
     {
