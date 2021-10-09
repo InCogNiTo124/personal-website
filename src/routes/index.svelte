@@ -1,8 +1,9 @@
 <script>
+  import dayjs from 'dayjs';
   import SectionGroup from "../components/SectionGroup.svelte";
-  import { FER_LINK_EN, TARGET_BLANK, INLINE_CLASS } from "../components/utils";
+  import { FER_LINK_EN, TARGET_BLANK, INLINE_CLASS, BIRTHDATE } from "../components/utils";
 
-  const age = Math.round((new Date() - 860803200000) / 1000 / 60 / 60 / 24 / 365);
+  const age = dayjs().diff(dayjs(BIRTHDATE), 'y')); 
 
   let sections = [
     {

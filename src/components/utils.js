@@ -18,3 +18,9 @@ export const DARK = "dark-theme";
  * Local storage keys
  */
 export const storageTheme = "msmetko/theme";
+
+/**
+ * Other constants
+ */
+export const BIRTHDATE = '1997-04-12';
+
