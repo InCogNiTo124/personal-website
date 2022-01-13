@@ -13,7 +13,6 @@
         document.getElementById("body").setAttribute("class", newval)
       });
       document.getElementById("body").setAttribute("class", localStorage.getItem(storageTheme) || LIGHT)
-
     }
   });
 </script>
