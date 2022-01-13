@@ -1,14 +1,30 @@
 <script>
-  import { BLANK } from "./utils.js";
+  import { onMount } from 'svelte';
+  import { BLANK, LIGHT, storageTheme } from './utils.js';
+  import { theme } from '../stores/theme_store';
   export let url, title, data;
+
+  let themeValue = LIGHT;
+
+  onMount(() => {
+    if (process.browser) {
+      theme.subscribe((newval) => {
+        themeValue = newval;
+      });
+
+      themeValue = localStorage.getItem(storageTheme) || LIGHT;
+    }
+  });
 </script>
 
-<div class="section">
+<div class="section {themeValue}">
   <h3>
     {#if url}
-      <a href={url} target={BLANK}>{title}</a>
+      <a href={url} target={BLANK}>
+        <div>{title}</div>
+      </a>
     {:else}
-      {title}
+      <div>{title}</div>
     {/if}
   </h3>
   <div>
@@ -30,14 +46,21 @@
   }
 
   .section h3 {
-    padding: 5px;
-    border-bottom: 1px groove black;
-    margin-bottom: 10px;
     width: max-content;
   }
+  
+  .section h3 div {
+    padding: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+  }
 
-  .section h3:hover {
-    border-color: rgb(218, 0, 0);
+  .dark-theme h3 div {
+    border-bottom: 1px solid white;
+  }
+
+  .section h3 div:hover {
+    border-color: rgba(218, 0, 0, 1);
   }
 
   .section div {
