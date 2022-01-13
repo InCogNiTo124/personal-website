@@ -16,6 +16,10 @@
   color: white;
 }
 
+.dark-theme #top {
+  background-color: #181818;
+}
+
 .light-theme {
   color: black;
   background-color: white;
@@ -23,6 +27,10 @@
 
 .light-theme a {
   color: black;
+}
+
+.light-theme #top {
+  background-color: white;
 }
 
 a {

@@ -40,6 +40,7 @@
     align-items: center;
     position: sticky;
   }
+
   @media screen and (min-width: 650px) {
     #top {
       height: 100%;
