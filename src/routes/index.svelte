@@ -1,7 +1,7 @@
 <script>
   import dayjs from 'dayjs';
-  import SectionGroup from "../components/SectionGroup.svelte";
-  import { FER_LINK_EN, TARGET_BLANK, INLINE_CLASS, BIRTHDATE } from "../components/utils";
+  import SectionGroup from "$lib/components/SectionGroup.svelte";
+  import { FER_LINK_EN, TARGET_BLANK, INLINE_CLASS, BIRTHDATE } from "$slib/utils";
 
   const age = dayjs().diff(dayjs(BIRTHDATE), 'y'); 
 

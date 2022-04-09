@@ -1,7 +1,7 @@
 <script>
-  import SectionGroup from "../../components/SectionGroup.svelte";
+  import SectionGroup from "$lib/components/SectionGroup.svelte";
   import axios from "axios";
-  import { REPO_API } from "../../components/utils.js";
+  import { REPO_API } from "$slib/utils";
 
   let projects = [];
   axios
