@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import smetko from "$lib/images/smetko.png";
 </script>
 
@@ -7,7 +7,7 @@
   <h1 id="name">Marijan Smetko</h1>
 </div>
 
-<style>
+<style scoped lang="css">
   .header {
     padding: 20px 30px;
     display: flex;

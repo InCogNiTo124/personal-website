@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { BLANK } from '$slib/utils';
   import Theme from '$slib/components/Theme.svelte';
 
@@ -28,7 +28,7 @@
   <a class="button" href="Marijan-Smetko-CV.pdf" target={BLANK}>My CV</a>
 </div>
 
-<style>
+<style scoped lang="css">
   a.router-link-active {
     color: rgb(218, 0, 0);
   }

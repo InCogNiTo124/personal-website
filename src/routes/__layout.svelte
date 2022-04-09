@@ -20,11 +20,11 @@
   });
 </script>
 
-<Header />
 <div id="app">
   <Nav {segment} />
   <div id="content">
     <div id="main">
+      <Header />
       <slot />
     </div>
   </div>

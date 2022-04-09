@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { onMount } from 'svelte';
   import { browser } from '$app/env';
   import { BLANK, LIGHT, storageTheme } from '$slib/utils';
@@ -37,7 +37,7 @@
   </div>
 </div>
 
-<style>
+<style scoped lang="css">
   .section {
     padding: 20px 0;
     margin: 10px 0;
