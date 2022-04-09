@@ -1,6 +1,6 @@
 <script>
-  import { BLANK } from "./utils.js";
-  import Theme from "./Theme.svelte";
+  import { BLANK } from '$slib/utils';
+  import Theme from '$slib/components/Theme.svelte';
 
   export let segment;
 </script>
@@ -9,9 +9,18 @@
   <div id="nav">
     <Theme />
     <hr />
-    <a class={`button ${segment === undefined ? "router-link-active" : ""}`} href=".">About</a>
-    <a class={`button ${segment === "projects" ? "router-link-active" : ""}`} href="/projects">Projects</a>
-    <a class={`button ${segment === "ilpc" ? "router-link-active" : ""}`} href="/ilpc">ILPC</a>
+    <a
+      class={`button ${segment === undefined ? 'router-link-active' : ''}`}
+      href=".">About</a
+    >
+    <a
+      class={`button ${segment === 'projects' ? 'router-link-active' : ''}`}
+      href="/projects">Projects</a
+    >
+    <a
+      class={`button ${segment === 'ilpc' ? 'router-link-active' : ''}`}
+      href="/ilpc">ILPC</a
+    >
   </div>
   <hr />
   <a class="button" href="https://blog.msmetko.xyz" target={BLANK}>Blog</a>

@@ -1,5 +1,5 @@
 <script>
-  import smetko from "images/smetko.png";
+  import smetko from "$lib/images/smetko.png";
 </script>
 
 <div class="header">

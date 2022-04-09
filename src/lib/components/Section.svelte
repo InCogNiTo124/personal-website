@@ -1,13 +1,14 @@
 <script>
   import { onMount } from 'svelte';
-  import { BLANK, LIGHT, storageTheme } from './utils.js';
-  import { theme } from '../stores/theme_store';
+  import { browser } from '$app/env';
+  import { BLANK, LIGHT, storageTheme } from '$slib/utils';
+  import { theme } from '$slib/stores/theme_store';
   export let url, title, data;
 
   let themeValue = LIGHT;
 
   onMount(() => {
-    if (process.browser) {
+    if (browser) {
       theme.subscribe((newval) => {
         themeValue = newval;
       });
