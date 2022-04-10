@@ -1,17 +1,24 @@
 <script lang="ts">
+  import { browser } from '$app/env';
+  import { page } from '$app/stores';
   import { BLANK } from '$slib/utils';
   import Theme from '$slib/components/Theme.svelte';
 
-  export let segment: string;
+  let segment = '';
+
+  if (browser) {
+    page.subscribe((newval) => {
+      segment = newval.routeId;
+    });
+  }
 </script>
 
 <div id="top">
   <div id="nav">
     <Theme />
     <hr />
-    <a
-      class={`button ${segment === undefined ? 'router-link-active' : ''}`}
-      href=".">About</a
+    <a class={`button ${!segment ? 'router-link-active' : ''}`} href="."
+      >About</a
     >
     <a
       class={`button ${segment === 'projects' ? 'router-link-active' : ''}`}

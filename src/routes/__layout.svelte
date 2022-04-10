@@ -6,7 +6,6 @@
   import Nav from '$lib/components/Nav.svelte';
   import Header from '$lib/components/Header.svelte';
 
-  let segment = '';
   onMount(() => {
     if (browser) {
       theme.useLocalStorage();
@@ -21,7 +20,7 @@
 </script>
 
 <div id="app">
-  <Nav {segment} />
+  <Nav />
   <div id="content">
     <div id="main">
       <Header />
