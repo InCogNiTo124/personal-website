@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { onMount } from 'svelte';
   import { browser } from '$app/env';
   import { LIGHT, storageTheme } from '$slib/utils';
