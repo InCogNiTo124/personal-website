@@ -2,7 +2,7 @@
   import { BLANK } from '$slib/utils';
   import Theme from '$slib/components/Theme.svelte';
 
-  export let segment;
+  export let segment: string;
 </script>
 
 <div id="top">
@@ -30,7 +30,7 @@
 
 <style scoped lang="css">
   a.router-link-active {
-    color: rgb(218, 0, 0);
+    color: var(--main-red);
   }
 
   #top {
@@ -41,7 +41,7 @@
     position: sticky;
     top: 0px;
     padding: 20px;
-    border-bottom: 1px solid rgb(218, 0, 0);
+    border-bottom: 1px solid var(--main-red);
   }
 
   #nav {
