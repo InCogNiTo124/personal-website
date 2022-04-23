@@ -1,6 +1,8 @@
 {
   "name": "app",
   "version": "0.0.1",
+  "private": true,
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
