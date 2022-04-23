@@ -8,3 +8,25 @@ declare namespace App {
 	// interface Session {}
 	// interface Stuff {}
 }
+
+type TSection = {
+	title: string;
+	data: string[];
+	url?: string;
+	urlTarget?: string;
+}
+
+type TProject = TSection & {
+	updated: string;
+}
+
+type TGitHubProjectResponse = {
+	data: GitHubProject[];
+}
+
+type TGitHubProject = {
+	name: string;
+	html_url: string;
+	description: string;
+	updated_at: string;
+};
