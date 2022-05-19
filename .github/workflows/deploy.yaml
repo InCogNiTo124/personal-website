@@ -19,11 +19,11 @@ jobs:
                   key: ${{ secrets.SSH_KEY }}
                   script: |
                       cd personal-website &&
-                      sudo docker-compose down &&
+                      docker compose down &&
                       git checkout master &&
                       git pull &&
-                      sudo docker-compose build &&
-                      sudo docker-compose up -d
+                      sudo docker compose build &&
+                      sudo docker compose up -d
                       # cleanup
                       # sudo docker images | grep '<none>' | sed -E 's/\s+/ /g' | cut -d ' ' -f 3 | xargs -I {} sudo docker rmi {} -f
 
