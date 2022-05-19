@@ -14,6 +14,8 @@
     <a class={`button ${segment === "ilpc" ? "router-link-active" : ""}`} href="/ilpc">ILPC</a>
   </div>
   <hr />
+  <a class="button" href="https://blog.msmetko.xyz" target={BLANK}>Blog</a>
+  <hr />
   <a class="button" href="Marijan-Smetko-CV.pdf" target={BLANK}>My CV</a>
 </div>
 
