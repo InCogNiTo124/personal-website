@@ -9,7 +9,7 @@
 
 <Section {url} {title} urlTarget={BLANK}>
   <div slot="body">
-    {#each data as paragraph}
+    {#each data as paragraph (paragraph)}
       <p>
         {@html paragraph}
       </p>
