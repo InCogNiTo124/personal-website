@@ -1,29 +1,16 @@
 name: deploy on production
 on:
-    # Deploy only when pushed directly to the master
-    push:
-        branches:
-            - master
+  # Deploy only when pushed directly to the master
+  push:
+    branches:
+      - master
 jobs:
-    deploy:
-        name: deploy
-        runs-on: ubuntu-latest
-        environment: MAIN_ENV
-        steps:
-            - name: ssh to my production server and do manual deploy
-              uses: appleboy/ssh-action@master
-              with:
-                  host: ${{ secrets.HOST }}
-                  username: ${{ secrets.USERNAME }}
-                  port: ${{ secrets.PORT }}
-                  key: ${{ secrets.SSH_KEY }}
-                  script: |
-                      cd personal-website &&
-                      docker compose down &&
-                      git checkout master &&
-                      git pull &&
-                      docker compose build &&
-                      docker compose up -d
-                      # cleanup
-                      # sudo docker images | grep '<none>' | sed -E 's/\s+/ /g' | cut -d ' ' -f 3 | xargs -I {} sudo docker rmi {} -f
-
+  deploy:
+    name: deploy
+    runs-on: ubuntu-latest
+    environment: MAIN_ENV
+    steps:
+      - name: Scaling lamp
+        uses: InCogNiTo124/scaling-lamp@master
+        with:
+          vault-password: ${{ secrets.VAULT_PASSWORD }}
