@@ -4,7 +4,7 @@
   import { BLANK } from '$slib/utils';
   import Theme from '$slib/components/Theme.svelte';
 
-  let segment: string = '';
+  let segment = '';
 
   if (browser) {
     page.subscribe((newval) => {

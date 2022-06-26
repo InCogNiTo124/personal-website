@@ -3,30 +3,30 @@
 // See https://kit.svelte.dev/docs/types#the-app-namespace
 // for information about these interfaces
 declare namespace App {
-	// interface Locals {}
-	// interface Platform {}
-	// interface Session {}
-	// interface Stuff {}
+  // interface Locals {}
+  // interface Platform {}
+  // interface Session {}
+  // interface Stuff {}
 }
 
 type TSection = {
-	title: string;
-	data: string[];
-	url?: string;
-	urlTarget?: string;
-}
+  title: string;
+  data: string[];
+  url?: string;
+  urlTarget?: string;
+};
 
 type TProject = TSection & {
-	updated: string;
-}
+  updated: string;
+};
 
 type TGitHubProjectResponse = {
-	data: GitHubProject[];
-}
+  data: GitHubProject[];
+};
 
 type TGitHubProject = {
-	name: string;
-	html_url: string;
-	description: string;
-	updated_at: string;
+  name: string;
+  html_url: string;
+  description: string;
+  updated_at: string;
 };
