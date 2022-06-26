@@ -8,5 +8,6 @@
 <SectionGroup
   sections={sections.map((section, idx) => ({ ...section, id: idx }))}
   noSections={!sections.length}
+  page={null}
   {Section}
 />
