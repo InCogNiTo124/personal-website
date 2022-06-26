@@ -1,0 +1,30 @@
+<script lang="ts">
+  import { onMount } from 'svelte';
+  import { browser } from '$app/env';
+  import { LIGHT, storageTheme } from '$slib/utils';
+  import { theme } from '$slib/stores/theme_store';
+  import Nav from '$lib/components/Nav.svelte';
+  import Header from '$lib/components/Header.svelte';
+
+  onMount(() => {
+    if (browser) {
+      theme.useLocalStorage();
+      theme.subscribe((newval) => {
+        document.getElementById('body').setAttribute('class', newval);
+      });
+      document
+        .getElementById('body')
+        .setAttribute('class', localStorage.getItem(storageTheme) || LIGHT);
+    }
+  });
+</script>
+
+<div id="app">
+  <Nav />
+  <div id="content">
+    <div id="main">
+      <Header />
+      <slot />
+    </div>
+  </div>
+</div>

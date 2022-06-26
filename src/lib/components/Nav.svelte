@@ -1,17 +1,33 @@
-<script>
-  import { BLANK } from "./utils.js";
-  import Theme from "./Theme.svelte";
+<script lang="ts">
+  import { browser } from '$app/env';
+  import { page } from '$app/stores';
+  import { BLANK } from '$slib/utils';
+  import Theme from '$slib/components/Theme.svelte';
 
-  export let segment;
+  let segment = '';
+
+  if (browser) {
+    page.subscribe((newval) => {
+      segment = newval.routeId;
+    });
+  }
 </script>
 
 <div id="top">
   <div id="nav">
     <Theme />
     <hr />
-    <a class={`button ${segment === undefined ? "router-link-active" : ""}`} href=".">About</a>
-    <a class={`button ${segment === "projects" ? "router-link-active" : ""}`} href="/projects">Projects</a>
-    <a class={`button ${segment === "ilpc" ? "router-link-active" : ""}`} href="/ilpc">ILPC</a>
+    <a class={`button ${!segment ? 'router-link-active' : ''}`} href="."
+      >About</a
+    >
+    <a
+      class={`button ${segment === 'projects' ? 'router-link-active' : ''}`}
+      href="/projects">Projects</a
+    >
+    <a
+      class={`button ${segment === 'ilpc' ? 'router-link-active' : ''}`}
+      href="/ilpc">ILPC</a
+    >
   </div>
   <hr />
   <a class="button" href="https://blog.msmetko.xyz" target={BLANK}>Blog</a>
@@ -19,9 +35,9 @@
   <a class="button" href="Marijan-Smetko-CV.pdf" target={BLANK}>My CV</a>
 </div>
 
-<style>
+<style scoped lang="css">
   a.router-link-active {
-    color: rgb(218, 0, 0);
+    color: var(--main-red);
   }
 
   #top {
@@ -32,7 +48,7 @@
     position: sticky;
     top: 0px;
     padding: 20px;
-    border-bottom: 1px solid rgb(218, 0, 0);
+    border-bottom: 1px solid var(--main-red);
   }
 
   #nav {
