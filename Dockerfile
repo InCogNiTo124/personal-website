@@ -1,4 +1,4 @@
-FROM node:18.4.0-alpine3.15 AS build-stage
+FROM node:18.8.0-alpine3.15 AS build-stage
 COPY . /app
 WORKDIR /app
 RUN yarn install
