@@ -124,10 +124,10 @@
     esbuild "^0.14.21"
     tiny-glob "^0.2.9"
 
-"@sveltejs/adapter-node@1.0.0-next.88":
-  version "1.0.0-next.88"
-  resolved "https://registry.yarnpkg.com/@sveltejs/adapter-node/-/adapter-node-1.0.0-next.88.tgz#3e9427eb0839b52c65743691de1cfcd5321743ba"
-  integrity sha512-N75E0tbq1+70/8lYUbttj7ry+5PDl7DB29aJqYIQQdnWMkIv0CPnH5ux4fwDuQJuhR7k1lfUbLd96JWwPBHvIg==
+"@sveltejs/adapter-node@1.0.0-next.89":
+  version "1.0.0-next.89"
+  resolved "https://registry.yarnpkg.com/@sveltejs/adapter-node/-/adapter-node-1.0.0-next.89.tgz#4dcdaac5c7319a49e65a28f30db47b5c61ca8d81"
+  integrity sha512-fWN2gqvM6zmZI25Y2vOpl+sPYzx19PBynf+FvUOcytP4+MhGzT8OxTTW7NCIBOGpRw8D2+u1yfQbANKhI2Ayug==
   dependencies:
     esbuild "^0.14.48"
 
@@ -1420,10 +1420,10 @@ svelte-preprocess@^4.0.0:
     sorcery "^0.10.0"
     strip-indent "^3.0.0"
 
-svelte@3.49.0:
-  version "3.49.0"
-  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.49.0.tgz#5baee3c672306de1070c3b7888fc2204e36a4029"
-  integrity sha512-+lmjic1pApJWDfPCpUUTc1m8azDqYCG1JN9YEngrx/hUyIcFJo6VZhj0A1Ai0wqoHcEIuQy+e9tk+4uDgdtsFA==
+svelte@3.50.1:
+  version "3.50.1"
+  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.50.1.tgz#b35fbc5e79ddd71e8bb27c3149ee6ff903841239"
+  integrity sha512-bS4odcsdj5D5jEg6riZuMg5NKelzPtmsCbD9RG+8umU03TeNkdWnP6pqbCm0s8UQNBkqk29w/Bdubn3C+HWSwA==
 
 text-table@^0.2.0:
   version "0.2.0"
@@ -1479,10 +1479,10 @@ typescript@*:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.6.3.tgz#eefeafa6afdd31d725584c67a0eaba80f6fc6c6c"
   integrity sha512-yNIatDa5iaofVozS/uQJEl3JRWLKKGJKh6Yaiv0GLGSuhpFJe7P3SbHZ8/yjAHRQwKRoA6YZqlfjXWmVzoVSMw==
 
-typescript@4.8.2:
-  version "4.8.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.8.2.tgz#e3b33d5ccfb5914e4eeab6699cf208adee3fd790"
-  integrity sha512-C0I1UsrrDHo2fYI5oaCGbSejwX4ch+9Y5jTQELvovfmFkK3HHSZJB8MSJcWLmCUBzQBchCrZ9rMRV6GuNrvGtw==
+typescript@4.8.3:
+  version "4.8.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.8.3.tgz#d59344522c4bc464a65a730ac695007fdb66dd88"
+  integrity sha512-goMHfm00nWPa8UvR/CPSvykqf6dVV8x/dp0c5mFTMTIu0u0FlGWRioyy7Nn0PGAdHxpJZnuO/ut+PpQ8UiHAig==
 
 uri-js@^4.2.2:
   version "4.4.1"
