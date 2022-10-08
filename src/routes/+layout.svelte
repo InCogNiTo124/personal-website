@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import { browser } from '$app/env';
+  import { browser } from '$app/environment';
   import Cookies from 'js-cookie';
   import { LIGHT, COOKIE_KEY_THEME } from '$slib/utils';
   import { theme } from '$slib/stores/theme_store';

@@ -40,7 +40,7 @@
         return { title: e.title, url: e.url, data: e.data };
       });
     })
-    .catch(console.log);
+    .catch(console.error);
 </script>
 
 <svelte:head>
