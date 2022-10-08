@@ -26,7 +26,7 @@
           let p = {
             title: project.name,
             url: project.html_url,
-            data: [project.description],
+            texts: [project.description],
             updated: project.updated_at,
           };
           plist.push(p);
@@ -37,10 +37,10 @@
         return 0;
       });
       projects = plist.map((e) => {
-        return { title: e.title, url: e.url, data: e.data };
+        return { title: e.title, url: e.url, texts: e.texts };
       });
     })
-    .catch(console.log);
+    .catch(console.error);
 </script>
 
 <svelte:head>

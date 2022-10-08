@@ -1,7 +1,8 @@
 FROM node:18.9.0-alpine3.15 AS build-stage
-COPY . /app
 WORKDIR /app
+COPY . .
 RUN yarn install
 RUN yarn build
-EXPOSE 3000
-CMD yarn run preview --host 0.0.0.0
+
+FROM nginx:1.23.1-alpine AS prod-stage
+COPY --from=build-stage /app/build /usr/share/nginx/html

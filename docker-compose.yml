@@ -1,7 +1,6 @@
-version: '3.7'
+version: '3.9'
 services:
   msmetko:
-    image: svelte
     container_name: personal-website
     build:
       dockerfile: Dockerfile
@@ -14,10 +13,10 @@ services:
       - 'traefik.http.routers.msmetko.tls=true'
       - 'traefik.http.routers.msmetko.tls.certresolver=le'
       - 'traefik.http.services.msmetko.loadbalancer.server.scheme=http'
-      - 'traefik.http.services.msmetko.loadbalancer.server.port=3000'
+      - 'traefik.http.services.msmetko.loadbalancer.server.port=80'
       - 'traefik.docker.network=traefik_default'
     expose:
-      - '3000'
+      - '80'
     networks:
       - traefik_default
 

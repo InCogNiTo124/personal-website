@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { browser } from '$app/env';
+  import { browser } from '$app/environment';
   import { page } from '$app/stores';
   import { BLANK } from '$slib/utils';
   import Theme from '$slib/components/Theme.svelte';
@@ -8,7 +8,7 @@
 
   if (browser) {
     page.subscribe((newval) => {
-      segment = newval.routeId;
+      segment = newval.url.pathname.slice(1);
     });
   }
 </script>
