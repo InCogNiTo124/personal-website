@@ -1,4 +1,4 @@
-version: '3.7'
+version: '3.9'
 services:
   msmetko:
     container_name: personal-website
