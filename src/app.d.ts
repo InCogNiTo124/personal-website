@@ -11,7 +11,7 @@ declare namespace App {
 
 type TSection = {
   title: string;
-  data: string[];
+  texts: string[];
   url?: string;
   urlTarget?: string;
 };
@@ -21,7 +21,7 @@ type TProject = TSection & {
 };
 
 type TGitHubProjectResponse = {
-  data: GitHubProject[];
+  data: TGitHubProject[];
 };
 
 type TGitHubProject = {
