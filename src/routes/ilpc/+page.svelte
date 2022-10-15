@@ -18,7 +18,7 @@
     {
       title: 'Materials',
       texts: [
-        `The course's official repository, including the lecture recordings and homeworks (both in Croatian) can be found <a class=${INLINE_CLASS} ${TARGET_BLANK} href="https://github.com/studosi-fer/ILPC">here</a>.`,
+        `The course's official repository, including the lecture recordings and homeworks (both in Croatian) can be found <a class=${INLINE_CLASS} ${TARGET_BLANK} href="https://github.com/InCogNiTo124/ILPC">here</a>.`,
       ],
     },
   ];
