@@ -1,5 +1,6 @@
 services:
   msmetko:
+    image: ghcr.io/incognito124/personal-website:latest
     labels:
       - 'traefik.enable=true'
       - 'traefik.http.routers.msmetko.rule=Host(`msmetko.xyz`)'
