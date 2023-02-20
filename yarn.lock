@@ -195,7 +195,7 @@
   resolved "https://registry.yarnpkg.com/@sveltejs/adapter-static/-/adapter-static-2.0.1.tgz#b76f7742ae635e1c063efcab8c6de064255f6292"
   integrity sha512-o5/q3YwD/ErxYCFlK1v3ydvldyNKk1lh3oeyxn4mhz+Pkbx/uuxhzmbOpytTlp5aVqNHDVsb04xadUzOFCDDzw==
 
-"@sveltejs/kit@^1.7.1":
+"@sveltejs/kit@1.7.2":
   version "1.7.2"
   resolved "https://registry.yarnpkg.com/@sveltejs/kit/-/kit-1.7.2.tgz#ec90d5f7d18a8c40e5a6d8dfae43acaa00f6b199"
   integrity sha512-qU/kbupIhsA1JA0GIN4cGa6XrhzPc99Z4agsEDeGPMy7qQqYCuFcIL2MLEH+tfqPUCu4m3FQ6ULVSUIVCnHj+A==
