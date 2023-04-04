@@ -4,5 +4,5 @@ COPY . .
 RUN yarn install
 RUN yarn build
 
-FROM nginx:1.23.3-alpine AS prod-stage
+FROM nginx:1.23.4-alpine AS prod-stage
 COPY --from=build-stage /app/build /usr/share/nginx/html
