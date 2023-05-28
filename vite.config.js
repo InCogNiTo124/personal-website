@@ -7,6 +7,7 @@ const config = {
   resolve: {
     alias: {
       $slib: path.resolve('/submodule/lib'),
+      $f: path.resolve('/submodule/static/favicon'),
     },
   },
   server: {

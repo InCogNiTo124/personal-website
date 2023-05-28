@@ -1,5 +1,5 @@
 <script lang="ts">
-  import smetko from '$lib/images/smetko.png';
+  import smetko from '$f/android-chrome-512x512.png';
 </script>
 
 <div class="header">
