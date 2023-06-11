@@ -13,9 +13,9 @@
     "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
   },
   "devDependencies": {
-    "@sveltejs/kit": "1.20.1",
-    "@typescript-eslint/eslint-plugin": "5.59.8",
-    "@typescript-eslint/parser": "5.59.8",
+    "@sveltejs/kit": "1.20.2",
+    "@typescript-eslint/eslint-plugin": "5.59.9",
+    "@typescript-eslint/parser": "5.59.9",
     "@types/js-cookie": "3.0.3",
     "eslint": "8.42.0",
     "eslint-config-prettier": "8.8.0",
